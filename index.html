@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phone-Book</title>
+  <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+  <script src="./js/variables.js" defer></script>
+  <script src="js/utils.js" defer></script>
+  <script src="./js/app.js" defer></script>
+</head>
+
+<body style="height: 100% !important">
+<!--<input type="file" file>-->
+  <div class="search-bar">
+<!--    <input type="file" id="file">-->
+    <!-- <button class="search-btn" id="search-button">Search</button> -->
+    <input class="search-field" type="text" id="search-field" placeholder="Search..." autocomplete />
+    <button class="add-btn" id="add-button">Add</button>
+  </div>
+  <div class="table-wrapper">
+    <table>
+      <thead id="table-head">
+        <!-- <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Username</th>
+          <th>Phone Number</th>
+          <th>Email</th>
+          <th>Company Name</th>
+          <th>Website</th>
+          <th>Action</th>
+        </tr> -->
+      </thead>
+      <tbody id="table-body">
+        <tr>
+          <td>table</td>
+          <td>table</td>
+          <td>table</td>
+          <td>table</td>
+          <td>table</td>
+          <td>table</td>
+          <td>table</td>
+          <td>
+            <button class="edit-btn">Edit</button><button class="delete-btn">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="modal-app" id="modal-app">
+    <form id="modal__form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input  type="text" name="name" required/>
+      </div>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" name="username" required/>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" required/>
+      </div>
+      <div class="form-group">
+        <label for="name" for="email">Email</label>
+        <input type="email" name="email" required/>
+      </div>
+      <div class="form-group">
+        <label for="name" for="company">Company</label>
+        <input type="text" name="company" required/>
+      </div>
+      <div class="form-group">
+        <label for="name" for="website">Website</label>
+        <input type="url" name="website" required/>
+      </div>
+      <div class="form-group">
+        <button class="submit-btn" type="submit" id="modal-submit">Submit</button>
+        <button type="button" class="cancel-btn" id="modal-cancel">Cancel</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

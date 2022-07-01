@@ -1,0 +1,166 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+body {
+	background-image: linear-gradient(
+		45deg,
+		rgb(54, 139, 139),
+		rgb(34, 93, 93),
+		rgb(122, 192, 122),
+		rgb(190, 190, 108),
+		rgb(142, 78, 142),
+		rgb(201, 94, 112)
+	);
+	background-size: 400% 400%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	animation: gradient 15s ease infinite;
+	white-space: nowrap;
+}
+
+.search-bar {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 2rem;
+	justify-content: center;
+	align-items: center;
+}
+button {
+	border-radius: 1rem;
+	border: none;
+	padding: 0.5rem 3rem;
+	margin: 0 1rem;
+	color: white;
+	cursor: pointer;
+	transition: 0.5s;
+	font-weight: bold;
+}
+button:hover {
+	transform: scale(1.1);
+	box-shadow: 0px 0px 10px white;
+}
+.edit-btn {
+	background-color: grey;
+	width: 100px;
+	padding: 0.3rem 0.5rem;
+	margin: 0 0.5rem;
+}
+.delete-btn {
+	background-color: crimson;
+	width: 100px;
+	padding: 0.3rem 0.5rem;
+	margin: 0 0.5rem;
+}
+.add-btn {
+	background-color: limegreen;
+	flex: 1;
+}
+.search-btn {
+	background-color: blue;
+	flex: 1;
+}
+.submit-btn {
+	flex: 1;
+	background-color: dodgerblue;
+	margin-top: 0.5rem;
+}
+.cancel-btn {
+	flex: 1;
+	background-color: crimson;
+	margin-top: 0.5rem;
+}
+.search-field {
+	outline: none;
+	flex: 1;
+	border-radius: 5rem;
+	border: none;
+	padding: 0.5rem;
+	margin: 1rem 1rem;
+}
+.table-wrapper {
+	overflow-x: auto;
+	background-image: linear-gradient(
+		45deg,
+		rgba(255, 255, 255, 0.6),
+		rgba(255, 255, 255, 0.258),
+		rgba(255, 255, 255, 0.6)
+	);
+	width: 97%;
+	border-radius: 2rem;
+}
+thead {
+	position: sticky;
+	top: 0;
+}
+table {
+	margin: 0 auto;
+	padding: 1rem;
+}
+th,
+td {
+	padding: 0.2rem;
+	background-color: whitesmoke;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+}
+th:hover,
+tr:hover {
+	filter: brightness(90%);
+}
+
+.modal-app {
+	color: #fff;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 1rem 3rem;
+	display: none;
+	align-items: center;
+	justify-content: center;
+}
+.modal-app input {
+	border-radius: 5rem;
+	border: none;
+	padding: 0.5rem;
+	margin: 0.5rem 1rem;
+	color: #444;
+}
+form {
+	border-radius: 1rem;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 1rem 3rem;
+}
+.form-group {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 1rem 1rem;
+}
+
+.action {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+/*@keyframes gradient {*/
+/*	0% {*/
+/*		background-position: 0% 50%;*/
+/*	}*/
+/*	50% {*/
+/*		background-position: 100% 50%;*/
+/*	}*/
+/*	100% {*/
+/*		background-position: 0% 50%;*/
+/*	}*/
+/*}*/
